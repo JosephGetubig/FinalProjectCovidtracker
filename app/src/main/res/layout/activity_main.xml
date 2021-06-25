@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logocovidtracker"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/textView"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THANK YOU FOR DOWNLOADING"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+<TextView
+    android:layout_marginTop="400dp"
+    android:id="@+id/textView2"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:layout_below="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Please Insert Place,Date and Temperature"
+    android:textColor="@android:color/holo_blue_dark"/>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_purple"
+        android:text="For example: SAN JACINTO 5/28/2021 34.5"
+        />
+    <Button
+        android:textSize="20sp"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="proceed"
+        tools:layout_editor_absoluteX="154dp"
+        android:layout_marginTop="50dp"
+        tools:layout_editor_absoluteY="414dp" />
+</RelativeLayout>

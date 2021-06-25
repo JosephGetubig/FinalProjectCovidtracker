@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/med"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/greetings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="WELCOME TO COVID TRACKER"
+        android:textColor="@android:color/holo_purple"
+        android:layout_marginLeft="20dp"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:textColor="@android:color/holo_red_light"
+        android:layout_marginVertical="200dp"
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:textColorHint="@android:color/holo_red_light"
+        android:hint="Place                Date              Temperature" />
+
+    <Button
+        android:textColor="@android:color/holo_orange_light"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:text="Add to Tracker"
+        />
+
+    <Button
+        android:textColor="@android:color/holo_orange_light"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View My Tracker"
+        android:layout_below="@+id/editText"
+        android:layout_toRightOf="@+id/btnAdd"
+        android:layout_marginLeft="20sp"
+        />
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>
